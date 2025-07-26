@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Time Table Optimizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📅 AI Time Table Optimizer</h1>
+    <form action="https://aditya2007.app.n8n.cloud/webhook-test/timetable" method="post">
+      <label for="name">👤 Your Name</label>
+      <input type="text" id="name" name="name" required />
+      
+
+      <label for="class">👤 Your Class</label>
+      <input type="text" id="class" name="class" required />
+      <label for="email">📧 Your Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="hours">⏱️ Daily Study Hours</label>
+      <input type="number" id="hours" name="hours" required min="1" />
+
+      <label for="subjects">📚 Subjects (comma separated)</label>
+      <textarea id="subjects" name="subjects" required placeholder="Eg: Math, Physics, Chemistry"></textarea>
+
+      <label for="goals">🎯 Goals (Optional)</label>
+      <textarea id="goals" name="goals" placeholder="Eg: Complete syllabus in 30 days"></textarea>
+      <label for="other">📝 Other Relevant Information</label>
+      <textarea id="other" name="other" placeholder="Any other relevant information
+eg: your play time preferences"></textarea>
+
+
+      <button type="submit">Generate Time Table</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+</body>
+</html>
